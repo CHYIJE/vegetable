@@ -32,7 +32,7 @@ public class UserEntity {
     @Column(name = "address", nullable = false)
     private String address;
     @Column(name = "phone", nullable = false)
-    private String phone;
+    private Integer phone;
 
 
 }

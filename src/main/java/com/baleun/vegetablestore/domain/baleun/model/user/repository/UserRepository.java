@@ -22,7 +22,7 @@ public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
     List<UserEntity> findByaddress(String address);
 
-    List<UserEntity> findByPhone(String phone);
+    List<UserEntity> findByPhone(Integer phone);
 
     Optional<UserEntity>findByIdxAndId(Integer idx, String id);
 

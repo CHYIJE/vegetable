@@ -19,10 +19,10 @@
             <a href="#">마이페이지</a>
         </div>
         <div>
-            <a href="#">장바구니</a>
+            <a href="/cart/shopingcart">장바구니</a>
         </div>
         <div>
-            <a href="#">고객센터</a>
+            <a href="/ucenter/usercenter">고객센터</a>
         </div>
     </div>
 
@@ -54,6 +54,12 @@
     <script>
         const login = () => {
             location.replace("/auth/login");
+        }
+        const cart = () => {
+            location.replace("/shopingcart/shopingcart")
+        }
+        const usercenter = () => {
+            location.replace("/ucenter/usercenter")
         }
     </script>
 </body>
