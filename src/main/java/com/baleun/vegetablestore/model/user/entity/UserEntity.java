@@ -1,4 +1,4 @@
-package com.baleun.vegetablestore.domain.baleun.model.user.entity;
+package com.baleun.vegetablestore.model.user.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,10 +1,11 @@
-package com.baleun.vegetablestore.domain.baleun.model.user.repository;
+package com.baleun.vegetablestore.model.user.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.baleun.vegetablestore.domain.baleun.model.user.entity.UserEntity;
+import com.baleun.vegetablestore.model.user.entity.UserEntity;
+
 import java.util.List;
 
 

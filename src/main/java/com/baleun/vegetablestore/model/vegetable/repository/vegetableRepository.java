@@ -1,11 +1,13 @@
-package com.baleun.vegetablestore.domain.baleun.model.vegetable.repository;
+package com.baleun.vegetablestore.model.vegetable.repository;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.baleun.vegetablestore.domain.baleun.model.vegetable.entity.vegetableEntity;
+import com.baleun.vegetablestore.model.vegetable.entity.vegetableEntity;
+
+
 
 
 public interface vegetableRepository extends JpaRepository<vegetableEntity, Long>{
