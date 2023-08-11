@@ -1,6 +1,6 @@
 -- user 테이블 데이터 삽입 예시
 INSERT INTO "user" (phone, address, email, id, name, password) 
-VALUES (01012345678, '서울시 강남구', 'user@example.com', 'user1', '홍길동', 'password123');
+VALUES (01012345678, '서울시 강남구', 'user@example.com', 'qwer', '홍길동', 'qwer123');
 
 -- vegetable 테이블 데이터 삽입 예시
 INSERT INTO vegetable (amount, price, origin, picture, vegename) 
