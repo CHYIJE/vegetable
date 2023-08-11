@@ -6,14 +6,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-public class ResBaleunDTO {
-
     @AllArgsConstructor
     @NoArgsConstructor
     @Getter
-    public class ResBaleunD{
+    public class ResBaleunDTO{
         private List<BaleunVegetableDTO> baleunUserDTOList;
     }
     
-}
+
 
