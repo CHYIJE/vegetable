@@ -12,11 +12,23 @@ public class AuthController {
 public String join(){
     return "auth/join";
 }
-@GetMapping("auth/login")
-public String login(HttpSession session){
-    Object attribute = session.getAttribute("userIdx");
-    Integer idx = (Integer) attribute;
-    System.out.println("로그인페이지 idx : " + idx);
+
+@GetMapping("/auth/login")
+public String login() {
     return "auth/login";
+}
+
+// @GetMapping("auth/login")
+// public String login(HttpSession session){
+    // Object attribute = session.getAttribute("userIdx");
+    // Integer idx = (Integer) attribute;
+    // System.out.println("로그인페이지 idx : " + idx);
+    // return "auth/login";
+// }
+
+@GetMapping("/auth/logout")
+public String logout(HttpSession session) {
+    session.invalidate();
+    return "redirect:/auth/login";
 }
 }

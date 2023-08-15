@@ -5,17 +5,18 @@ import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.baleun.vegetablestore.model.vegetable.entity.vegetableEntity;
+import com.baleun.vegetablestore.model.vegetable.entity.VegetableEntity;
 
 
 
 
-public interface vegetableRepository extends JpaRepository<vegetableEntity, Long>{
-    Optional<vegetableEntity> findByIdx(Integer idx);
-    Optional<vegetableEntity> findByVegename(String vegename);
-    List<vegetableEntity> findByPrice(Integer price);
-    List<vegetableEntity> findByOrigin(String origin);
-    List<vegetableEntity> findByPicture(String picture);
-    List<vegetableEntity> findByAmount(Integer amount);
-    Optional<vegetableEntity>findByIdxAndVegename(Integer idx, String vegename);
+public interface VegetableRepository extends JpaRepository<VegetableEntity, Long>{
+    Optional<VegetableEntity> findByIdx(Integer idx);
+    Optional<VegetableEntity> findByVegename(String vegename);
+    List<VegetableEntity> findByPrice(Integer price);
+    List<VegetableEntity> findByOrigin(String origin);
+    List<VegetableEntity> findByPicture(String picture);
+    List<VegetableEntity> findByAmount(Integer amount);
+    Optional<VegetableEntity>findByIdxAndVegename(Integer idx, String vegename);
+    List<VegetableEntity> findAll();
 }

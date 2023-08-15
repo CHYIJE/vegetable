@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class vegetableEntity {
+public class VegetableEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
@@ -36,4 +36,7 @@ public class vegetableEntity {
     @Column
     (name = "amount", nullable = false)
     private Integer amount;
+    
+    
+    
 }

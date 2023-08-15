@@ -1,5 +1,6 @@
 package com.baleun.vegetablestore.domain.auth.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,11 +15,11 @@ public class ReqLoginDTO {
     @NoArgsConstructor
     @Getter
     public static class User {
+
+        @NotBlank
         private String id;
+
+        @NotBlank
         private String password;
-        private String name;
-        private String email;
-        private String address;
-        private Integer phone;
     }
 }

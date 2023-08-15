@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
     @NoArgsConstructor
     @Getter
     public class ResBaleunDTO{
-        private List<BaleunVegetableDTO> baleunUserDTOList;
+        private List<BaleunVegetableDTO> baleunVegetableDTOList;
     }
     
 

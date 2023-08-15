@@ -10,13 +10,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.baleun.vegetablestore.domain.auth.dto.ReqJoinDTO;
 import com.baleun.vegetablestore.domain.auth.dto.ReqLoginDTO;
-import com.baleun.vegetablestore.domain.baleun.model.user.entity.UserEntity;
-import com.baleun.vegetablestore.domain.baleun.model.user.repository.UserRepository;
+import com.baleun.vegetablestore.model.user.entity.UserEntity;
+import com.baleun.vegetablestore.model.user.repository.UserRepository;
 
 import jakarta.servlet.http.HttpSession;
 
 @Service
-public class AuthServiecApiV1 {
+public class AuthServiceApiV1 {
 
     @Autowired // db를 가져오기 위해서 
     private UserRepository userRepository; // user정보를 가져온다 

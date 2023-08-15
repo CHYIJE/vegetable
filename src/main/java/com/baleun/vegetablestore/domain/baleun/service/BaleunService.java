@@ -9,7 +9,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.baleun.vegetablestore.domain.baleun.dto.BaleunVegetableDTO;
 import com.baleun.vegetablestore.domain.baleun.dto.ResBaleunDTO;
-import com.baleun.vegetablestore.model.vegetable.entity.VegetableEntity; // Make sure the import is correct
+import com.baleun.vegetablestore.model.vegetable.entity.VegetableEntity;
+import com.baleun.vegetablestore.model.vegetable.repository.VegetableRepository;
+
 
 @Service
 @Transactional(readOnly = true)

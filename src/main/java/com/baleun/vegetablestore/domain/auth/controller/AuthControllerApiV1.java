@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.baleun.vegetablestore.domain.auth.dto.ReqJoinDTO;
 import com.baleun.vegetablestore.domain.auth.dto.ReqLoginDTO;
-import com.baleun.vegetablestore.domain.auth.service.AuthServiecApiV1;
+import com.baleun.vegetablestore.domain.auth.service.AuthServiceApiV1;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -22,7 +22,7 @@ import jakarta.servlet.http.HttpSession;
 public class AuthControllerApiV1 {
 
     @Autowired //restcontroller에 new를 안쓰고 끌어오기 위해 
-    private AuthServiecApiV1 authServiecApiV1;
+    private AuthServiceApiV1 authServiecApiV1;
 
     @PostMapping("/join")
     public ResponseEntity<?> join(@RequestBody ReqJoinDTO dto){
