@@ -122,16 +122,17 @@
           }
         }
 
+
         fetch("/api/v1/auth/login",{
           method : "POST",
           headers : {
-            "Content-Type" : "application/json;charset=utf-8"
+            "Content-Type" : "application/json"
           },
           body : JSON.stringify(dto)
         })
         .then(response => response.json())
         .then(result => {
-          alert(result.message);
+          alert(result);
           if(result.code === 0) {
             location.replace("/");
           }

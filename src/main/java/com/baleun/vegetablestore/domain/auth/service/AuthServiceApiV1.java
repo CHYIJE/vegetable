@@ -95,8 +95,10 @@ public class AuthServiceApiV1 {
         // 인증 완료. 세션에 유저 정보 입력 
         session.setAttribute("userIdx", userEntity.getIdx());
         session.setAttribute("userId", userEntity.getId());
+        session.setAttribute("userPassword", userEntity.getPassword());
 
         return new ResponseEntity<>(
+            
             "로그인에 성공하였습니다.",
             HttpStatus.OK);
     };

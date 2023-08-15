@@ -39,7 +39,7 @@ public class AuthControllerApiV1 {
     }
 
 
-    public static void main(String[] args) {
+    // public static void main(String[] args) {
         
         // AuthControllerApiV1 authControllerApiV1 = new Auth
 // 
@@ -49,5 +49,5 @@ public class AuthControllerApiV1 {
 // 
         // ResponseEntity<?> responseEntity = authControllerA
 
-    }
-}
+   }
+

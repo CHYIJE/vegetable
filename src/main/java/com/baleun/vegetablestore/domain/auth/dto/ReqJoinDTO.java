@@ -1,6 +1,5 @@
 package com.baleun.vegetablestore.domain.auth.dto;
 
-import org.springframework.validation.annotation.Validated;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
